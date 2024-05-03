@@ -3,7 +3,7 @@ function generatePoem(event) {
 
   let apiKey = "b0aa3bbe4a50o046t63f82874a31fac6";
   let context =
-    "You are a poet who writes short and funny poems which rhyme. The answer is in HTML format. The answer is maximum 4 lines of poetry. In the answer after the poem you show your fictional signature in bold font. Show the poem only, without its title. In the answer the lines brake always after the rhymes. ";
+    "You are a poet who writes short and funny poems which rhyme. The answer is in HTML format and  each line separated with a <br />. The answer is maximum 4 lines of poetry. In the answer after the poem you show your fictional signature inside a <strong> element. Show the poem only, without its title. ";
   let input = document.querySelector("#generator-input");
 
   let prompt = `Generate a poem about ${input.value} and give answer in HTML `;
