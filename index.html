@@ -4,39 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.8/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/src/styles.css" />
     <title>AI poem generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Poem Generator 🤖</h1>
-    </header>
-    <main>
-      <form action="">
-        <input
-          type="text"
-          placeholder="Enter the topic of the poem"
-          autofocus
-          required
-        />
-        <input type="submit" />
-      </form>
+    <div class="container">
+      <header>
+        <h1>AI Poem Generator 🤖</h1>
+      </header>
+      <main>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Enter the topic of the poem"
+            autofocus
+            required
+            class="form-input"
+          />
 
-      <div>The poem will be displayed here</div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/gosiagrajewska" target="_blank"
-        >Malgorzata Grajewska</a
-      >
-      and is open-sourced on
-      <a href="https://github.com/gosiagrajewska/projectAI" target="_blank"
-        >GitHub</a
-      >
-      an hosted on
-      <a href="https://generatorofpoems.netlify.app/" target="_blank">Netlify</a
-      >.
-    </footer>
+          <input type="submit" value="Submit" class="submit-button" />
+        </form>
+
+        <div class="poem">The poem will be displayed here</div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/gosiagrajewska" target="_blank"
+          >Malgorzata Grajewska</a
+        >
+        and is open-sourced on
+        <a href="https://github.com/gosiagrajewska/projectAI" target="_blank"
+          >GitHub</a
+        >
+        an hosted on
+        <a href="https://generatorofpoems.netlify.app/" target="_blank"
+          >Netlify</a
+        >.
+      </footer>
+    </div>
     <script src="/src/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,77 @@
+:root {
+  --primary-color: #ececec;
+  --secondary-color: #9fd3c7;
+  --tertiary-color: #385170;
+  --quarternary-color: #142d4c;
+
+  --font-heading: "Ubuntu Sans Mono", monospace;
+  --font-text: "Briem Hand", cursive;
+}
+
+body {
+  background-color: var(--secondary-color);
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: 58px;
+  line-height: 1.5;
+}
+form {
+  padding: 30px;
+  margin: 50px auto;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.3);
+}
+footer {
+  font-family: var(--font-heading);
+  color: var(--tertiary-color);
+  font-size: 14px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: var(--quarternary-color);
+  font-weight: bold;
+}
+.container {
+  margin: 100px auto;
+  max-width: 600px;
+}
+.form-input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-heading);
+  width: 75%;
+}
+.submit-button {
+  background-color: var(--tertiary-color);
+  color: #ececec;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 20%;
+  font-family: var(--font-text);
+  font-size: large;
+  font-weight: lighter;
+}
+.poem {
+  text-align: center;
+  padding: 30px;
+  font-family: var(--font-text);
+  font-weight: lighter;
+  font-size: 26px;
+  line-height: 1.5;
+  background-color: var(--primary-color);
+  color: var(--quarternary-color);
+  border-left: 5px solid var(--tertiary-color);
+  margin-bottom: 50px;
+}
